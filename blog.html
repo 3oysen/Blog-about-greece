@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+      integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I"
+      crossorigin="anonymous"
+    />
+    <style>
+      .carousel-item {
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;
+      }
+      .ad1 {
+        background: url(https://cdn.pixabay.com/photo/2018/05/14/16/54/alpine-3400788_960_720.jpg)
+          no-repeat center center;
+      }
+      .ad2 {
+        background: url(https://cdn.pixabay.com/photo/2016/08/15/08/22/greece-1594689_960_720.jpg)
+          no-repeat center center;
+      }
+      .ad3 {
+        background: url(https://cdn.pixabay.com/photo/2016/10/10/22/36/seychelles-1730082_960_720.jpg)
+          no-repeat center center;
+      }
+      @media (max-width: 576px) {
+        .carousel-item {
+          min-height: 12rem;
+        }
+      }
+
+      @media (min-width: 576px) {
+        .carousel-item {
+          min-height: 17rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand">
+          <img height="30px" width="30px" src="iconmonstr-airport.png" alt="" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarMenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarMenu">
+          <ul class="navbar-nav mr-auto mb-2 mb-md-0">
+            <li class="nav-item active">
+              <a href="#" aria-current="page" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Articles</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Shop</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Contact</a>
+            </li>
+          </ul>
+          <form action="" class="d-flex">
+            <input
+              type="search"
+              placeholder="search"
+              aria-label="search"
+              class="form-control mr-2"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <main class="container">
+      <header>
+        <div id="topCarousel" data-ride="carousel" class="mt-3 carousel slide">
+          <ol class="carousel-indicators">
+            <li data-target="#topCarousel" data-slide-to="1"></li>
+            <li data-target="#topCarousel" data-slide-to="2"></li>
+            <li data-target="#topCarousel" data-slide-to="3"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item rounded ad1 active">
+              <div class="carousel-caption text-light">
+                <h3>Where to go on vacation?</h3>
+                <p>Cheap vacations are at our fingertips</p>
+              </div>
+            </div>
+            <div class="carousel-item rounded ad2">
+              <div class="carousel-caption text-light">
+                <h3>How to plan a trip?</h3>
+                <p>Transportation, tickets, expenses</p>
+              </div>
+            </div>
+            <div class="carousel-item rounded ad3">
+              <div class="carousel-caption text-light">
+                <h4>Hot destinations for summer 2022!</h4>
+                <p>Best hotel offers</p>
+                <div class="data-caption">June 15</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+    </main>
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+      integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
