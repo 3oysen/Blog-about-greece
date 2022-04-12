@@ -11,36 +11,7 @@
       integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I"
       crossorigin="anonymous"
     />
-    <style>
-      .carousel-item {
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        background-size: cover;
-      }
-      .ad1 {
-        background: url(https://cdn.pixabay.com/photo/2018/05/14/16/54/alpine-3400788_960_720.jpg)
-          no-repeat center center;
-      }
-      .ad2 {
-        background: url(https://cdn.pixabay.com/photo/2016/08/15/08/22/greece-1594689_960_720.jpg)
-          no-repeat center center;
-      }
-      .ad3 {
-        background: url(https://cdn.pixabay.com/photo/2016/10/10/22/36/seychelles-1730082_960_720.jpg)
-          no-repeat center center;
-      }
-      @media (max-width: 576px) {
-        .carousel-item {
-          min-height: 12rem;
-        }
-      }
-
-      @media (min-width: 576px) {
-        .carousel-item {
-          min-height: 17rem;
-        }
-      }
-    </style>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <nav class="navbar navbar-expand-md navbar-dark bg-dark">
@@ -86,37 +57,315 @@
       </div>
     </nav>
 
-    <main class="container">
-      <header>
-        <div id="topCarousel" data-ride="carousel" class="mt-3 carousel slide">
-          <ol class="carousel-indicators">
-            <li data-target="#topCarousel" data-slide-to="1"></li>
-            <li data-target="#topCarousel" data-slide-to="2"></li>
-            <li data-target="#topCarousel" data-slide-to="3"></li>
-          </ol>
-          <div class="carousel-inner">
-            <div class="carousel-item rounded ad1 active">
-              <div class="carousel-caption text-light">
-                <h3>Where to go on vacation?</h3>
-                <p>Cheap vacations are at our fingertips</p>
-              </div>
+    <div class="container">
+      <div id="topCarousel" data-ride="carousel" class="mt-3 carousel slide">
+        <ol class="carousel-indicators">
+          <li data-target="#topCarousel" data-slide-to="1"></li>
+          <li data-target="#topCarousel" data-slide-to="2"></li>
+          <li data-target="#topCarousel" data-slide-to="3"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item rounded ad1 active">
+            <div class="carousel-caption text-light">
+              <h3>Where to go on vacation?</h3>
+              <p>Cheap vacations are at our fingertips</p>
             </div>
-            <div class="carousel-item rounded ad2">
-              <div class="carousel-caption text-light">
-                <h3>How to plan a trip?</h3>
-                <p>Transportation, tickets, expenses</p>
-              </div>
+          </div>
+          <div class="carousel-item rounded ad2">
+            <div class="carousel-caption text-light">
+              <h3>How to plan a trip?</h3>
+              <p>Transportation, tickets, expenses</p>
             </div>
-            <div class="carousel-item rounded ad3">
-              <div class="carousel-caption text-light">
-                <h4>Hot destinations for summer 2022!</h4>
-                <p>Best hotel offers</p>
-                <div class="data-caption">June 15</div>
-              </div>
+          </div>
+          <div class="carousel-item rounded ad3">
+            <div class="carousel-caption text-light">
+              <h4>Hot destinations for summer 2022!</h4>
+              <p>Best hotel offers</p>
+              <div class="data-caption">June 15</div>
             </div>
           </div>
         </div>
-      </header>
+        <a
+          href="#topCarousel"
+          type="button"
+          data-slide="prev"
+          class="carousel-control-prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a
+          href="#topCarousel"
+          type="button"
+          data-slide="next"
+          class="carousel-control-next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+
+    <main class="container">
+      <div class="row mt-3">
+        <div class="col-sm-6 col-md-4">
+          <div class="card">
+            <img
+              src="https://cdn.pixabay.com/photo/2020/02/06/18/43/santorini-4825173_960_720.jpg"
+              alt=""
+              class="card-img-top"
+            />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title"><b>Santorini</b></h5>
+              <p class="card-text">
+                A volcanic island in the Aegean Sea, forming with several
+                smaller islands a small archipelago of the same name in Greece,
+                part of the Cyclades archipelago.
+              </p>
+              <button type="button" class="mt-auto btn btn-lg btn-primary">
+                Read more
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <div class="card">
+            <img
+              src="https://cdn.pixabay.com/photo/2019/08/10/08/03/parthenon-4396367_960_720.jpg"
+              alt=""
+              class="card-img-top"
+            />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title"><b>Athens</b></h5>
+              <p class="card-text">
+                The capital and largest city of Greece, one of Europe's most
+                important tourist destinations with ancient cultural monuments
+                and also the tenth largest urban complex in the European Union
+                at 3.5 million inhabitants.
+              </p>
+              <button type="button" class="mt-auto btn btn-lg btn-primary">
+                Read more
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <div class="card">
+            <img
+              src="https://cdn.pixabay.com/photo/2021/08/01/12/58/beach-6514331_960_720.jpg"
+              alt=""
+              class="card-img-top"
+            />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title"><b>Zakynthos</b></h5>
+              <p class="card-text">
+                A Greek island in the Ionian Sea, west of the Peloponnese, the
+                third largest in the Ionian archipelago. <br />
+                The island is about 40 km long and 20 km wide.
+              </p>
+              <button type="button" class="mt-auto btn btn-lg btn-primary">
+                Read more
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-8 mt-5 mb-5">
+          <div class="blog-post">
+            <img
+              src="https://cdn.pixabay.com/photo/2012/04/10/23/09/greece-26871_960_720.png"
+              alt=""
+              class="rounded float-right w-50 ml-4 mb-4"
+            />
+            <h2 class="blog-post-title">Why go to Greece on vacation?</h2>
+            <p class="blog-post-date">May 23th <a href="#">Łukasz</a></p>
+            <p>
+              If you are wondering where to go on vacation in 2022 then you
+              don't have to anymore. Here are some of the reasons
+              <strong>why you should choose Greece</strong> for your holiday
+              vacation.
+            </p>
+            <hr />
+            <p>
+              Greece enjoys good weather most of the year. The sun shines more
+              than 250 days a year and the Greek islands are considered to be
+              the sunniest region in Europe.
+            </p>
+            <h5>1. Beautiful beaches in Greece</h5>
+            <p>
+              Greece is famous for its stunning beaches and crystal clear waters
+              in all shades of blue. Whether you love soft sand, pebbles or
+              stones, you are sure to find the perfect holiday in Greece for
+              you. You will find as many as 380 throughout Greece. Among the
+              <strong>most famous Greek beaches</strong> are: Wreck Bay on
+              Zakynthos, Myrtos Beach on Kefalonia, the Red Beach on Santorini
+              and the pink beach of Elafonisi on Crete.
+            </p>
+            <h5>2. Greece's glorious history and impressive monuments</h5>
+            <p>
+              A vacation in Greece is an excellent choice
+              <strong>for history lovers</strong>. At every turn you will find
+              magnificent monuments from the time of the Greeks' greatest glory.
+              The most famous Greek building is the Acropolis in Athens - the
+              birthplace of our modern civilization. In each region you will
+              find plenty of amazing places to discover.
+            </p>
+            <h5>3. Easy to get to Greece</h5>
+            <p>
+              Thanks to <strong>very good air connections</strong> we can move
+              from rainy Poland to sunny Greece in just a few hours. There are
+              daily flights from Athens to the most popular islands and to the
+              biggest cities in mainland Greece. Many Greek islands can also be
+              reached by ferry from the port of Piraeus. Thanks to this you can
+              easily and in a relatively short time enjoy the Greek sun while
+              sipping a drink on one of the beaches. Greece for vacations is
+              just perfect!
+            </p>
+            <h5>4. Cheap vacations in Greece</h5>
+            <p>
+              Vacations in Greece are cheap compared to other European
+              countries. Whether you prefer an All Inclusive vacation or rather
+              travel on your own, you will find hotels and guesthouses for every
+              budget. Booking holidays in Greece well in advance
+              <strong>you can save up to 30-40% discount</strong>. You can also
+              find many Last Minute Greece tours on travel agencies which will
+              guarantee you a cheap vacation in Greece.
+            </p>
+            <p>
+              In Greece, everyone will find a way to have their dream vacation!
+            </p>
+          </div>
+
+          <div class="blog-post mt-5">
+            <img
+              src="https://cdn.pixabay.com/photo/2014/09/20/20/24/serpentine-454249_960_720.jpg"
+              alt=""
+              class="rounded float-right w-50 ml-4 mb-4"
+            />
+            <h2 class="blog-post-title">Car rental in Greece</h2>
+            <p class="blog-post-date">April 12th <a href="#">Łukasz</a></p>
+            <p>
+              Renting a car in Greece will give you a
+              <strong>sense of freedom</strong> while traveling and allow you to
+              stop wherever you feel like.
+            </p>
+            <hr />
+            <p>
+              Greece is a wonderful holiday destination. Crystal clear sea,
+              wonderful beaches, sunshine and delicious cuisine guarantee a
+              successful holiday. If you like to discover new places and travel
+              on your own terms off the popular tourist routes, a great solution
+              for you will be renting a car.
+            </p>
+            <h5>
+              When is it worth renting a car and what should I pay attention to
+              when picking up a car from a rental agency?
+            </h5>
+            <p>
+              It's worth renting a car if you're planning a round trip where
+              you'll visit several places in Greece. But you should also pay
+              attention to the following notes:
+            </p>
+            <ul>
+              <li>
+                Greeks are known for their temper behind the wheel. Especially
+                large Greek cities are heavily congested.
+              </li>
+              <li>There are heavy fines for disregarding traffic laws.</li>
+              <li>
+                Moving by car through the Greek cities requires from a driver
+                not only a lot of experience but also the ability to stay calm.
+              </li>
+            </ul>
+            <p>Renting a car in Greece - what should you know?</p>
+            <ol>
+              <li>
+                The minimum age for a driver to rent a car in Greece is 21 years
+                old.
+              </li>
+              <li>
+                Regardless of age, the driver must have held a license for a
+                minimum of 12 months.
+              </li>
+              <li>
+                When planning a car rental in Greece, make sure that you have
+                enough money on your credit card to cover the cost of the car
+                rental and the deposit.
+              </li>
+            </ol>
+            <p>
+              The kilometer limit - if you are planning a trip around the Greek
+              island, you will probably not use the kilometer limit. However, if
+              you plan to drive a longer distance, make sure that your rental
+              company will not charge you for the additional kilometers.
+            </p>
+          </div>
+
+          <!-- pagination -->
+          <nav class="mt-5" aria-label="Pagination website">
+            <ul class="pagination justify-content-center">
+              <li class="page-item disabled">
+                <a
+                  href="#"
+                  tabindex="-1"
+                  aria-disabled="true"
+                  class="page-link"
+                >
+                  Previous
+                </a>
+              </li>
+              <li class="page-item">
+                <a href="#" class="page-link active">1</a>
+              </li>
+              <li class="page-item"><a href="#" class="page-link">2</a></li>
+              <li class="page-item"><a href="#" class="page-link">3</a></li>
+              <li class="page-item"><a href="#" class="page-link">4</a></li>
+              <li class="page-item"><a href="#" class="page-link">5</a></li>
+              <li class="page-item"><a href="#" class="page-link">6</a></li>
+              <li class="page-item"><a href="#" class="page-link">7</a></li>
+              <li class="page-item">
+                <a href="#" class="page-link">Next</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <aside class="col-md-4 mt-5">
+          <!-- sidebar -->
+          <div class="bg-light p-4 mb-3 rounded">
+            <h4 class="font-italic">About the website</h4>
+            <p>
+              The aim of the website is to show not only places known from
+              catalogs of travel agencies, but also less popular tourist places
+              in Greece and interesting facts from everyday life of Greeks.
+            </p>
+          </div>
+          <div class="p-4">
+            <h4 class="font-italic">Archive</h4>
+            <ol class="list-unstyled">
+              <li><a href="#">September </a></li>
+              <li><a href="#">August </a></li>
+              <li><a href="#">July </a></li>
+              <li><a href="#">June </a></li>
+              <li><a href="#">May </a></li>
+              <li><a href="#">April </a></li>
+              <li><a href="#">March </a></li>
+              <li><a href="#">February </a></li>
+              <li><a href="#">January </a></li>
+            </ol>
+          </div>
+          <div class="p-4">
+            <h4 class="font-italic">Categories</h4>
+            <ol class="list-unstyled">
+              <li><a href="#">Travels </a></li>
+              <li><a href="#">Culinary </a></li>
+              <li><a href="#">Hobby</a></li>
+            </ol>
+          </div>
+        </aside>
+      </div>
     </main>
 
     <script

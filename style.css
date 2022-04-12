@@ -1,0 +1,38 @@
+.carousel-item {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+}
+.ad1 {
+  background: url(https://cdn.pixabay.com/photo/2019/11/19/10/07/olives-4636996_960_720.jpg)
+    no-repeat center center;
+}
+.ad2 {
+  background: url(https://cdn.pixabay.com/photo/2016/08/15/08/22/greece-1594689_960_720.jpg)
+    no-repeat center center;
+}
+.ad3 {
+  background: url(https://cdn.pixabay.com/photo/2020/10/14/18/37/santorini-5655111_960_720.jpg)
+    no-repeat center center;
+}
+@media (max-width: 576px) {
+  .carousel-item {
+    min-height: 12rem;
+  }
+}
+
+@media (min-width: 576px) {
+  .carousel-item {
+    min-height: 17rem;
+  }
+}
+a.carousel-control-prev {
+  margin-left: 6rem;
+}
+a.carousel-control-next {
+  margin-right: 6rem;
+}
+
+.card {
+    height: 100%;
+}
