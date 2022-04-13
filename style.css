@@ -1,3 +1,7 @@
+.navbar {
+  background-color: #e3f2fd
+}
+
 .carousel-item {
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -35,4 +39,19 @@ a.carousel-control-next {
 
 .card {
     height: 100%;
+}
+
+#newsletter-box {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  background-image: url(https://cdn.pixabay.com/photo/2018/05/09/01/00/greece-3384386_960_720.jpg);
+}
+
+.form-box {
+  width: 20rem;
+}
+
+footer a {
+  color: #e3f2fd;
 }
